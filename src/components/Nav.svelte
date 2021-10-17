@@ -1,6 +1,6 @@
 <script>
   import { url } from "@roxi/routify";
-  import { Button } from '../components';
+  import { Button, Menu } from '../components';
   import { user, loginWithGoogle, logout } from '../components/Auth.svelte';
 
   let _user;
@@ -16,7 +16,7 @@
   </div>
 
   {#if _user}
-    <Button title="Logout" on:click={logout} /> 
+    <Menu user={_user} on:confirmLogout={logout}/>
   {:else}
     <Button title="Login with Google" on:click={loginWithGoogle} /> 
   {/if}
