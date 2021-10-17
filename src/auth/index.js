@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import { firebaseConfig } from "./config.js";
+import { firebaseConfig } from '../auth/config.js';
 import { readable } from 'svelte/store';
 import { CREATE_USER_COLLECTION } from '../services/firebase'
 

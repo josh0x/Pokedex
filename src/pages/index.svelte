@@ -1,13 +1,10 @@
-<!-- <script>
-  import { initAuth } from "../auth";
-  import { Auth } from '../components'
-
-  const { loginWithGoogle, logout, user } = initAuth();
-
-  let _user;
-  user.subscribe((v) => (_user = v));
-</script> -->
-
+<script>
+  import { random } from "lodash";
+  const getRandomPokemons = () => {
+    console.log(random(0,806))
+  }
+  getRandomPokemons()
+</script>
 <main>
   <p>index</p>
 </main> 
