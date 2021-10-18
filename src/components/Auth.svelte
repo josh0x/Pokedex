@@ -12,7 +12,6 @@ It's going to check if we are logged in or not & return on the logic of the Auth
       GET_USER_DOCUMENT(v.id)
         .then((data) => {
           if (data) {
-            console.log(data);
             userStore.set('favorites', data.favorites);
           }
         })
